@@ -1,0 +1,27 @@
+{
+  "name": "goit-node-hw-01-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badyanch/goit-node-hw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/badyanch/goit-node-hw/issues"
+  },
+  "homepage": "https://github.com/badyanch/goit-node-hw#readme",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "nanoid": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
