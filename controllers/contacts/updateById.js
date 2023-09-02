@@ -1,9 +1,11 @@
-const Contacts = require("../../models/contacts");
+const { Contact } = require("../../models/contact");
 const { HttpError } = require("../../helpers");
 
 const updateById = async (req, res) => {
-  const { contactId } = req.params;
-  const result = await Contacts.updateContact(contactId, req.body);
+  const { id } = req.params;
+  const result = await Contact.findByIdAndUpdate(id, req.body, {
+    new: true,
+  }).select("-createdAt -updatedAt");
 
   if (!result) {
     throw HttpError(404);

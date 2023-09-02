@@ -5,6 +5,7 @@ const getById = require("./getById");
 const add = require("./add");
 const deleteById = require("./deleteById");
 const updateById = require("./updateById");
+const updateStatusById = require("./updateStatusById");
 
 module.exports = {
   getAll: ctrlWrapper(getAll),
@@ -12,4 +13,5 @@ module.exports = {
   add: ctrlWrapper(add),
   deleteById: ctrlWrapper(deleteById),
   updateById: ctrlWrapper(updateById),
+  updateStatusById: ctrlWrapper(updateStatusById),
 };
