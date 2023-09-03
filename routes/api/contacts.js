@@ -1,4 +1,4 @@
-const { Router } = require("express");
+const { Router } = require("express:router");
 
 const ctrl = require("../../controllers/contacts");
 const { schemas } = require("../../models/contact");

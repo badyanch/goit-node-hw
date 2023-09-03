@@ -36,25 +36,9 @@ contactSchema.post("save", handleMongooseError);
 
 const Contact = model("contact", contactSchema);
 
-const addContactSchema = Joi.object({
-  name: Joi.string().min(4).max(255).required(),
-  email: Joi.string().min(4).max(255).pattern(REGEXPS.email).required(),
-  phone: Joi.string()
-    .pattern(
-      REGEXPS.phone,
-      "pattern: /\\d{3}-\\d{3}-\\d{4}/ example: 123-456-7890"
-    )
-    .required(),
-});
-
 const updateContactStatusByIdSchema = Joi.object({
   favorite: Joi.boolean().required(),
 });
-
-const schemas = {
-  addContactSchema,
-  updateContactStatusByIdSchema,
-};
 
 module.exports = {
   Contact,
