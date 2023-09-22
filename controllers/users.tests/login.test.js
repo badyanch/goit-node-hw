@@ -1,3 +1,11 @@
+/* 
+test login controller
+
+1. відповідь повина мати статус-код 200
+2. у відповіді повинен повертатися токен
+3. у відповіді повинен повертатися об'єкт user з 2 полями email и subscription з типом даних String
+*/
+
 const request = require("supertest");
 
 const { connect, disconnect } = require("../../server");

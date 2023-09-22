@@ -10,7 +10,6 @@ const add = async (req, res) => {
     phone: result.phone,
     favorite: result.favorite,
   });
-  res.status(201).json(result);
 };
 
 module.exports = add;
